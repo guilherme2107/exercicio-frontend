@@ -1,0 +1,23 @@
+{
+  "name": "exercicio-frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guilherme2107/exercicio-frontend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guilherme2107/exercicio-frontend/issues"
+  },
+  "homepage": "https://github.com/guilherme2107/exercicio-frontend#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "http-server": "^0.12.1"
+  }
+}
