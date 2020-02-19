@@ -16,6 +16,8 @@
             <fieldset id="identificacao"> <legend>Identificação do cliente</legend>
                 <p><label for="cnome">Nome:</label>
                 <input type="text" name="tnome" id="cnome" size="20" maxlength="30" placeholder="Nome completo"></p>
+                <p><label for="vcpf">CPF:</label>
+                <input type="text" name="gcpf" id="vcpf" size="13" maxlength="14"></p>
                 <p><label for="csenha"> Senha:</label> 
                 <input type="password" name="tsenha" id="csenha" size="8" maxlength="8" placeholder="8 dígitos"></p>
                 <p><label for="cmail">Email:</label> 
@@ -25,6 +27,8 @@
             </fieldset>
 
             <fieldset id="endereco"> <legend>Endereço do cliente</legend>
+                <p><label for="cep">CEP:</label>
+                <input type="text" name="cep" id="cep" size="8" maxlength="8"></p>
                 <p><label for="vend">Endereço:</label>
                 <input type="text" name="gend" id="vend" size="20" maxlength="30"></p>
                 <p><label for="vnum">Número:</label>
@@ -33,8 +37,6 @@
                 <input type="text" name="gcidade" id="vcidade" size="20" maxlength="30"></p>
                 <p><label for="vestado">Estado:</label>
                 <input type="text" name="gestado" id="vestado" size="2" maxlength="3"></p>
-                <p><label for="vcpf">CPF:</label>
-                <input type="text" name="gcpf" id="vcpf" size="13" maxlength="14"></p>
             </fieldset>
 
             <input type="submit" value="Enviar">      
