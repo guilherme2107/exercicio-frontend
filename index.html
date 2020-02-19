@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head> 
+    <meta charset="UTF-8">
+    <title> Formulário de cadastro de clientes.</title>
+</head>
+
+<body>
+    
+<section class="conteudo">
+
+    <div class="Cadastro">
+        <h3>Formulário de cadastro de clientes</h3>
+         <form method="POST" id="tcadastro" action="">
+            <fieldset id="identificacao"> <legend>Identificação do cliente</legend>
+                <p><label for="cnome">Nome:</label>
+                <input type="text" name="tnome" id="cnome" size="20" maxlength="30" placeholder="Nome completo"></p>
+                <p><label for="csenha"> Senha:</label> 
+                <input type="password" name="tsenha" id="csenha" size="8" maxlength="8" placeholder="8 dígitos"></p>
+                <p><label for="cmail">Email:</label> 
+                <input type="email" name="tmail" id="cmail" size="20" maxlength="30" placeholder="Email"></p> 
+                <p><label for="cdata">Data de Nascimento:</label>
+                <input type="date" name="tdata" id="cdata"></p>
+            </fieldset>
+
+            <fieldset id="endereco"> <legend>Endereço do cliente</legend>
+                <p><label for="vend">Endereço:</label>
+                <input type="text" name="gend" id="vend" size="20" maxlength="30"></p>
+                <p><label for="vnum">Número:</label>
+                <input type="number" name="gnum" id="vnum" min="0" max="999999"> </p>
+                <p><label for="vcidade">Cidade:</label>
+                <input type="text" name="gcidade" id="vcidade" size="20" maxlength="30"></p>
+                <p><label for="vestado">Estado:</label>
+                <input type="text" name="gestado" id="vestado" size="2" maxlength="3"></p>
+                <p><label for="vcpf">CPF:</label>
+                <input type="text" name="gcpf" id="vcpf" size="13" maxlength="14"></p>
+            </fieldset>
+
+            <input type="submit" value="Enviar">      
+
+        </form>
+    </div>
+</section>
+</body>
+</html>
