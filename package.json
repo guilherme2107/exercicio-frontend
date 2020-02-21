@@ -18,6 +18,7 @@
   "homepage": "https://github.com/guilherme2107/exercicio-frontend#readme",
   "devDependencies": {
     "gulp": "^4.0.2",
+    "gulp-webserver": "^0.9.1",
     "http-server": "^0.12.1"
   }
 }
