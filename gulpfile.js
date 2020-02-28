@@ -8,7 +8,6 @@ gulp.task('teste', function(done){
 });
 
 
-
 gulp.task('teste2', function(done){
     console.log('teste2');
     done();
