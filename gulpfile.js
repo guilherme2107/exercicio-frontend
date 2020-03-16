@@ -1,20 +1,30 @@
 'use strict';
 
-var gulp = require('gulp');
+var gulp    = require('gulp');
+var debug   = require('gulp-debug');
+var htmlmin = require('gulp-html-minifier');
 
-gulp.task('teste', function(done){
-    console.log('helloworld');
+function buildHtml(done)
+{   
+    const options = {
+        collapseWhitespace: true,
+        removeComments    : true
+    };
+    gulp.src('./src/**/*.html')
+        .pipe(htmlmin(options))
+        .pipe(gulp.dest('./build'))
+    ;
+
     done();
-});
+}
 
-
-gulp.task('teste2', function(done){
-    console.log('teste2');
+function build(done)
+{
+    buildHtml(done);
     done();
-});
+}
 
+gulp.task('build:html', buildHtml);
+gulp.task('watch:html', () => gulp.watch(['./src/**/*.html'], buildHtml));
 
-gulp.task('default', function(done){
-    console.log('default');
-    done();
-});
+gulp.task('build', build);
